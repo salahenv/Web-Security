@@ -16,6 +16,7 @@ Generally by sending malicius link or malicius code the input box of webpage. On
 2. ```Content-Security-Policy: default-src 'self' example.com *.example.com``` All the content will come from example.com || subdmain.example.com || same origin
 3. ```Content-Security-Policy: default-src 'self'; image-src example.com *.example.com``` Images will come from example.com || subdomain.example.com || same origin . Other than image will come from same origin.
 4. ```Content-Security-Policy: default-src 'https://example.com'``` All the content will strictly come over secured TLS/SSL HTTP.
+5. ```Content-Security-Policy: default-src 'self' script-src 'self' unsafe-inline nonce-nonceKey``` Inline script will be executed with ```unsafe-inline``` and the with ```nonce-nonceKey``` we can differentiate between our inline and injected one. The matched nonce inline script will get executed rest is ignored.
 
 
 
