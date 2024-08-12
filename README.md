@@ -17,3 +17,9 @@ Generally by sending malicius link or malicius code the input box of webpage. On
 3. ```Content-Security-Policy: default-src 'self'; image-src example.com *.example.com``` Images will come from example.com || subdomain.example.com || same origin . Other than image will come from same origin.
 4. ```Content-Security-Policy: default-src 'https://example.com'``` All the content will strictly come over secured TLS/SSL HTTP.
 
+
+
+
+### Resources
+https://dev.to/shostarsson/security-headers-to-use-on-your-webserver-3id5
+
