@@ -18,9 +18,16 @@ Generally by sending malicius link or malicius code the input box of webpage. On
 4. ```Content-Security-Policy: default-src 'https://example.com'``` All the content will strictly come over secured TLS/SSL HTTP.
 5. ```Content-Security-Policy: default-src 'self' script-src 'self' unsafe-inline nonce-nonceKey``` Inline script will be executed with ```unsafe-inline``` and the with ```nonce-nonceKey``` we can differentiate between our inline and injected one. The matched nonce inline script will get executed rest is ignored.
 
-
-
-
 ### Resources
 https://dev.to/shostarsson/security-headers-to-use-on-your-webserver-3id5
+
+# Click Hijacking and Iframe Security.
+- In order to control the embeding of your web app into other website as a iframe is controlled by ```X-Frame-Options```.
+
+### Below is posible values.
+1. ```X-Frame-Options: DENY``` It will deny all website to embed our website into there as a IFrame.
+2. ```X-Frame-Options: SAMEORIGIN``` Same origin can embed.
+3. ```X-Frame-Options: ALLOWFROM origin 'example1.com example2.com'``` Same origin can embed.
+
+
 
