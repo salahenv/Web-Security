@@ -29,5 +29,11 @@ https://dev.to/shostarsson/security-headers-to-use-on-your-webserver-3id5
 2. ```X-Frame-Options: SAMEORIGIN``` Same origin can embed.
 3. ```X-Frame-Options: ALLOWFROM origin 'example1.com example2.com'``` Same origin can embed.
 
+# More Security Headers
+### 1. X-Powered-By
+### 2. Referrer-Policy
+### 3. X-Content-Type-Options
+### 4. X-XSS-Protection
+
 
 
